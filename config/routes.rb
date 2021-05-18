@@ -1,8 +1,4 @@
 Rails.application.routes.draw do
-  get 'users/about'
-  get 'users/new'
-  get 'users/edit'
-  get 'users/show'
   root to: 'home#top'
   
   #owner_sessions
