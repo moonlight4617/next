@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'owner_sessions/new'
   get 'owners/about'
   get 'owners/new'
   get 'owners/edit'
