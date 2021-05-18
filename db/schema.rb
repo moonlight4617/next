@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_18_080906) do
+ActiveRecord::Schema.define(version: 2021_05_18_081103) do
 
   create_table "availables", force: :cascade do |t|
     t.string "rent_date"
@@ -87,6 +87,15 @@ ActiveRecord::Schema.define(version: 2021_05_18_080906) do
     t.string "start_time"
     t.string "end_time"
     t.text "business_time"
+  end
+
+  create_table "tag_to_shops", force: :cascade do |t|
+    t.bigint "tag_id"
+    t.bigint "shop_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["shop_id"], name: "index_tag_to_shops_on_shop_id"
+    t.index ["tag_id"], name: "index_tag_to_shops_on_tag_id"
   end
 
   create_table "tags", force: :cascade do |t|
