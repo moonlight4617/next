@@ -10,7 +10,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_18_075809) do
+ActiveRecord::Schema.define(version: 2021_05_18_080138) do
+
+  create_table "availables", force: :cascade do |t|
+    t.string "rent_date"
+    t.string "start_time"
+    t.bigint "shop_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["shop_id"], name: "index_availables_on_shop_id"
+  end
 
   create_table "calendars", force: :cascade do |t|
     t.string "start_time"
