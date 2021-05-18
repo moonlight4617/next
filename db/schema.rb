@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_18_080138) do
+ActiveRecord::Schema.define(version: 2021_05_18_080420) do
 
   create_table "availables", force: :cascade do |t|
     t.string "rent_date"
@@ -31,6 +31,17 @@ ActiveRecord::Schema.define(version: 2021_05_18_080138) do
     t.bigint "user_id"
     t.index ["shop_id"], name: "index_calendars_on_shop_id"
     t.index ["user_id"], name: "index_calendars_on_user_id"
+  end
+
+  create_table "chats", force: :cascade do |t|
+    t.string "room_name"
+    t.integer "application_flg"
+    t.bigint "shop_id"
+    t.bigint "user_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["shop_id"], name: "index_chats_on_shop_id"
+    t.index ["user_id"], name: "index_chats_on_user_id"
   end
 
   create_table "owners", force: :cascade do |t|
