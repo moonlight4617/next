@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2021_05_18_081103) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "availables", force: :cascade do |t|
     t.string "rent_date"
     t.string "start_time"
