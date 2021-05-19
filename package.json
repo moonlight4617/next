@@ -1,5 +1,7 @@
 {
   "name": "next",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "serve": "^11.3.2"
+  }
 }
