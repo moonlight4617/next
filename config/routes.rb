@@ -1,24 +1,5 @@
 Rails.application.routes.draw do
-  get 'new/show'
-  get 'new/edit'
-  get 'new/index'
-  get 'new/set_business_time'
-  get 'new/select_prefecture'
-  get 'chats/show'
-  get 'chats/show_for_owner'
-  get 'chats/index_for_owner'
-  get 'calendars/new'
-  get 'calendars/next'
-  get 'calendars/index_for_user'
-  get 'calendars/s_index'
-  get 'calendars/demo'
-  get 'calendars/confirm'
-  get 'owner_sessions/new'
-  get 'owners/about'
-  get 'owners/new'
-  get 'owners/edit'
-  get 'owners/show'
-  get 'user_session/new'
+  
   root to: 'home#top'
   
   #owner_sessions
