@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  get 'chats/show'
+  get 'chats/show_for_owner'
+  get 'chats/index_for_owner'
   get 'calendars/new'
   get 'calendars/next'
   get 'calendars/index_for_user'
