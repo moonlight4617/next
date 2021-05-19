@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'new/show'
+  get 'new/edit'
+  get 'new/index'
+  get 'new/set_business_time'
+  get 'new/select_prefecture'
   get 'chats/show'
   get 'chats/show_for_owner'
   get 'chats/index_for_owner'
