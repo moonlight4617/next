@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  get 'calendars/new'
+  get 'calendars/next'
+  get 'calendars/index_for_user'
+  get 'calendars/s_index'
+  get 'calendars/demo'
+  get 'calendars/confirm'
   get 'owner_sessions/new'
   get 'owners/about'
   get 'owners/new'
